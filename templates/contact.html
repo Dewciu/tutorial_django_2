@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<h1>Contact Page</h1>
+<p>This is a template</p>
+
+<p>
+    My phone number is {{phone_number}}, and I live in {{city}} on the street {{street}}
+</p>
+
+{% for day in days %}
+
+    <li>{{day}}</li>
+
+{%endfor%}
+
+{%endblock%}
